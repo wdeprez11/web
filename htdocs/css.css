@@ -21,26 +21,26 @@ img {
     max-width: 80%
 }
 
-/*pre>code {
-padding: 20px;
-white-space: pre-wrap
-}*/
+pre>code {
+    padding: 20px;
+    white-space: pre-wrap
+}
 
-    code {
-        background: #eee;
-        padding: 2px
-    }
+code {
+    background: #eee;
+    padding: 2px
+}
 
-    hr {
-        border: 2px solid #ddd
-    }
+hr {
+    border: 2px solid #ddd
+}
 
-    a {
-        text-decoration: none
-    }
+a {
+    text-decoration: none
+}
 
-    .card {
-        border-left: 2px solid #ddd;
-        padding-left: 5px;
-        background-color: #eee
-    }
+.card {
+    border-left: 2px solid #ddd;
+    padding-left: 5px;
+    background-color: #eee
+}
