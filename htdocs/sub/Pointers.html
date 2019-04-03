@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Article: Pointers & References</title>
+        <title>Article: Pointers and References</title>
         <link rel="stylesheet" type="text/css" media="screen" href="../css.css">
     </head>
 
@@ -13,7 +13,7 @@
                 <a href="../index.html">home</a>
                 <br>
                 <a href="../learn.html">back</a>
-                <h1>Pointers & References</h1>
+                <h1>Pointers and References</h1>
                 <p>When I was a beginner programmer, I always wanted to learn C and C++, It always seemed like the <em>cool</em> thing to do. My Dad always dissauded me in learning C and told me to focus on Java, I'm sure he was just trying to do what was in my best interest, but realistically I think it was best for me to learn C/C++ to become a better programmer.</p>
                 <p>The most difficult part learning C (for me), was getting used to using pointers and references. In this article I hope to explain the proper cases in which to use either -- and what pointers and references are.</p>
                 <h2><em>Regular</em> variables</h2>
@@ -25,6 +25,9 @@ int main() {
                 </code></pre>
                 <h2>Pointers</h2>
                 <p>So what <em>is</em> a pointer, and why are they special? A pointer... points! A pointer is a variable that points to an address of memory of the specific type of pointer.</p>
+                <h3>Visualizing pointers</h3>
+                <p>In <code>Memory Table</code> below, you can see we have a variable <code>int *p</code>, this variable points to the memory address <code>0003</code>. We have a second variable <code>int x</code> which stores the value <code>25</code> and the memory address <code>0003</code></p>
+                <p>It's important to notice the distinction of the asterisk in <code>int *p</code> as its explaining that it's a pointer of type <code>int</code> -- that it is capable of pointer to the address of an <code>int</code> value.</p>
                 <table>
                     <caption>Memory Table</caption>
                     <tr>
@@ -58,6 +61,16 @@ int main() {
                         <td>0004</td>
                     </tr>
                 </table>
+                <h3>Declaring pointers</h3>
+                <p>There are several ways to declare a pointer and it's important to make the distinction because you may end up declaring incorrectly and mess up your entire program.</p>
+                <pre><code>
+int main() {
+    int* p;
+    int *p;
+    int * p;
+}
+                </code></pre>
+                <p></p>
                 <hr>
             </div>
         </main>
