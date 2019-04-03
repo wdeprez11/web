@@ -44,3 +44,26 @@ a {
     padding-left: 5px;
     background-color: #eee
 }
+
+table {
+    margin: auto;
+    width: 80%;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+caption {
+    padding: 10px;
+}
+
+th,
+tr {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 5px;
+}
