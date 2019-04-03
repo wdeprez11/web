@@ -1,0 +1,65 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Article: Pointers & References</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="../css.css">
+    </head>
+
+    <body>
+        <main>
+            <div>
+                <a href="../index.html">home</a>
+                <br>
+                <a href="../learn.html">back</a>
+                <h1>Pointers & References</h1>
+                <p>When I was a beginner programmer, I always wanted to learn C and C++, It always seemed like the <em>cool</em> thing to do. My Dad always dissauded me in learning C and told me to focus on Java, I'm sure he was just trying to do what was in my best interest, but realistically I think it was best for me to learn C/C++ to become a better programmer.</p>
+                <p>The most difficult part learning C (for me), was getting used to using pointers and references. In this article I hope to explain the proper cases in which to use either -- and what pointers and references are.</p>
+                <h2><em>Regular</em> variables</h2>
+                <p>So what do we know about <em>Regular</em> variables? First, we know they store the address and value of the specific static types (E.g. <code>int</code>, <code>float</code>, <code>char</code>, etc..)</p>
+                <pre><code>
+int main() {
+    int regularVar = 5;
+}
+                </code></pre>
+                <h2>Pointers</h2>
+                <p>So what <em>is</em> a pointer, and why are they special? A pointer... points! A pointer is a variable that points to an address of memory of the specific type of pointer.</p>
+                <table>
+                    <caption>Memory Table</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Address</th>
+                    </tr>
+                    <tr>
+                        <td>int *p</td>
+                        <td>0003</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>0001</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>0002</td>
+                    </tr>
+                    <tr>
+                        <td>int x</td>
+                        <td>25</td>
+                        <td>0003</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>0004</td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+        </main>
+    </body>
+</html>
