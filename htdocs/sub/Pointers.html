@@ -73,10 +73,27 @@ int main() {
     return 0;
 }
                 </code></pre>
-                <p><code>int *p</code>: more common in C code, it denotes the pointer bound to the p.</p>
-                <p>This really should only be used when declaring a pointer and <code>int</code> in the same line, but it's not the best practice.</p>
-                <p><code>int * p</code>: evaluates the same as <code>int *p</code>, it's really just a compromise between the two.</p>
-                <p>It's best to stick with the C++ method of <code>int* ptr</code> as opposed to anything else.</p>
+                <p><code>int *p</code>: more common in C code, it denotes the pointer bound to the p. This really should only be used when declaring a pointer and <code>int</code> in the same line, but it's not the best practice.</p>
+                <p><code>int * p</code>: evaluates the same as <code>int *p</code>, it's really just a compromise between the two. It's best to stick with the C++ method of <code>int* ptr</code> as opposed to anything else.</p>
+                <h4>Setting a pointer</h4>
+                <p>If you remember, with pointers, they store references, not values. Pointers always must be assigned to a reference, denoted with the prefix <code>&amp;</code>.</p>
+                <pre><code>
+int* ptr = &ampref;
+                </code></pre>
+                <h4>Pointers with functions</h4>
+                <pre><code>
+void add1(int&amp; ptr);
+
+int main() {
+    int num = 1;
+    int* ptr = &ampnum;
+    add1(*ptr);
+}
+
+void add1(int&amp; ref) {
+    ptr++;
+}
+                </code></pre>
                 <hr>
                 Sources: http://www.stroustrup.com/bs_faq2.html#whitespace
             </div>
